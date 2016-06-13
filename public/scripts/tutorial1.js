@@ -26,7 +26,7 @@ var CommentList = React.createClass({
       </div>
     );
   }
-});  
+});
 
 var CommentForm = React.createClass({
   render: function() {
@@ -63,6 +63,6 @@ var data = [
 ];
 
 ReactDOM.render(
-  <CommentBox data={data} />,
+  <CommentBox url="/api/comments" />,
   document.getElementById('content')
 );
